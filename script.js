@@ -8,11 +8,10 @@
 const firstName = prompt("Inserisci il nome");
 const lastName = prompt("Inserisci il cognome");
 const favColor = prompt("Inserisci il tuo colore preferito");
+const casualNumber = Math.ceil(Math.random() * 100);
 
-
-const outputStr =
-`
-Mi chiamo ${firstName} ${lastName} il mio colore preferito è ${favColor}
+const outputStr = `
+Password Generator: ${firstName}${lastName}${favColor}${casualNumber}
 `;
 
 document.getElementById("output").innerHTML = outputStr;
